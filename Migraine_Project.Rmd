@@ -1,0 +1,138 @@
+---
+title: "Migraine Project"
+author: "Clancey Barrington"
+date: "1/12/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### Motivation
+The data that I am using is my own personal data. I have had migraines and headaches most of my life. To better understand my triggers and causes I started collecting data on them. The data covers 11-17-2018 to today.  
+Note: For a headache to be recorded it had to be a bad headache.
+Note: After 6-15-2020 I quit using Excedrin due to rebound headaches  
+
+  
+#### Variables
+`Date`: Day of migraine/ headache  
+`Month`: Month migraine/ headache occurred  
+`Year`: Year migraine/ headache occurred  
+`Type`: 0 for migraine, 1 for headache  
+`Medication`: Medication used  
+`Trigger`: What I believe caused my migraine/ headache 
+  
+#### EDA
+First, let's get the tidy verse and read in the data.  
+```{r}
+library(tidyverse)
+migraine <- read.csv('migraine_data.csv')
+```
+  
+From 11-17-2018 to 12-31-2018 I had 11 migraines/ headaches. For 2019 I had 52 migraines/ headaches, which averages out to one a week. For 2020 I had 44 migraines/ headaches, which is less than the previous year.  
+```{r}
+migraine %>% 
+  select(Year) %>% 
+  group_by(Year) %>% 
+  summarise(n = n())
+```
+  
+  
+```{r}
+# make year a factor
+migraine$Year <- as.factor(migraine$Year)
+migraine %>% 
+  filter(Year == '2019' | Year == '2020') %>% 
+  ggplot(aes(Year)) +
+  geom_bar(fill = "#ff8e7a") +
+  labs(title = "Migraines/ Headaches Each Year", y = "Count")
+```
+  
+```{r}
+migraine$Date <- as.Date(migraine$Date, "%Y-%m")
+
+
+migraine %>% 
+  ggplot(aes(x = format(Date, "%Y-%m"))) +
+  geom_bar(fill = "#3ec767") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  labs(title = "Migraines/ Headaches Each Month", x = "Month", y = "Count")
+
+
+```
+  
+```{r}
+migraine$Date2 <- format(migraine$Date, "%Y-%m")
+migraine %>% 
+  select(Date2, Type) %>% 
+  mutate(Type = ifelse(Type == 0, "Migraine", "Headache")) %>% 
+  group_by(Date2,Type) %>% 
+  summarise(n = n()) %>% 
+  ggplot(aes(Date2, n, fill = Type)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  labs(title = "Migraines/ Headaches Each Month", x = "Month", y = "Count")
+
+migraine %>% 
+  ggplot(aes(x = format(Date, "%Y-%m"), fill = Type)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  labs(title = "Migraines/ Headaches Each Month", x = "Month", y = "Count")
+```
+  
+```{r}
+migraine %>% 
+  select(Date2) %>% 
+  group_by(Date2) %>% 
+  summarise(n = n()) 
+```
+  
+  
+```{r}
+migraine %>% 
+  select(Date2, Type) %>% 
+  mutate(Type = ifelse(Type == 0, "Migraine", "Headache")) %>% 
+  group_by(Date2,Type) %>% 
+  summarise(n = n()) %>% 
+```
+  
+  
+For the end of 2018, I had 9 migraines and 2 headaches. For 2019, I had 38 migraines and 14 headaches. For 2020, I had 26 migraines and 18 headaches.
+```{r}
+migraine %>% 
+  select(Year, Type) %>% 
+  group_by(Year, Type) %>% 
+  summarise(n = n())
+```
+  
+```{r}
+migraine$Year <- as.factor(migraine$Year)
+migraine %>% 
+  filter(Year == '2019' | Year == '2020') %>% 
+  ggplot(aes(Year)) +
+  geom_bar(fill = "#ff8e7a") +
+  labs(title = "Migraines/ Headaches Each Year", y = "Count")
+```
+  
+  
+  
+  
+My top three triggers are unknown (59), food (24), and sleep (16). Food means I didn't eat enough that day and sleep means I didn't sleep enough that day.
+```{r}
+migraine %>% 
+  select(Trigger) %>% 
+  group_by(Trigger) %>% 
+  summarise(n = n())
+```
+
+It looks like I've been eating better in 2020. I have managed to halve my food related headaches. This is most likely due to the pandemic and being at home more. I have also significantly lowered my sleep relate headaches. This is most likely due to having classes later in the day.
+```{r}
+migraine %>% 
+  select(Trigger, Year) %>% 
+  group_by(Trigger, Year) %>% 
+  summarise(n = n())
+```
+
+
+

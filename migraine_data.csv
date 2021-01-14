@@ -1,0 +1,108 @@
+Date,Month,Year,Type,Medication,Trigger
+11-17-2018,Nov 2018,2018,0,Summatriptan,food
+11-22-2018,Nov 2018,2018,0,Summatriptan,food
+11-29-2018,Nov 2018,2018,0,Summatriptan,unknown
+12-1-2018,Dec 2018,2018,1,Excedrin,unknown
+12-3-2018,Dec 2018,2018,1,Excedrin,unknown
+12-6-2018,Dec 2018,2018,0,Summatriptan,unknown
+12-07-2018,Dec 2018,2018,0,Summatriptan,food
+12-12-2018,Dec 2018,2018,0,Summatriptan,food
+12-17-2018,Dec 2018,2018,0,Summatriptan,food
+12-26-2018,Dec 2018,2018,0,Summatriptan,food
+12-31-2018,Dec 2018,2018,0,Summatriptan,sleep
+01-06-2019,Jan 2019,2019,1,Excedrin,unknown
+01-17-2019,Jan 2019,2019,1,Excedrin,unknown
+01-19-2019,Jan 2019,2019,0,Summatriptan,unknown
+01-24-2019,Jan 2019,2019,0,Summatriptan,unknown
+02-03-2019,Feb 2019,2019,0,Summatriptan,sleep
+02-04-2019,Feb 2019,2019,0,None,weather
+02-05-2019,Feb 2019,2019,0,Summatriptan,unknown
+02-12-2019,Feb 2019,2019,0,Sleep aid,food
+02-17-2019,Feb 2019,2019,1,Excedrin,unknown
+02-23-2019,Feb 2019,2019,0,Sleep aid,sleep
+02-24-2019,Feb 2019,2019,1,Excedrin,unknown
+02-28-2019,Feb 2019,2019,0,Sleep aid,unknown
+03-08-2019,Mar 2019,2019,0,Summatriptan,sleep
+03-10-2019,Mar 2019,2019,1,Excedrin,unknown
+03-12-2019,Mar 2019,2019,1,Excedrin,unknown
+03-14-2019,Mar 2019,2019,0,Summatriptan,food
+03-29-2019,Mar 2019,2019,1,None,food
+04-04-2019,April 2019,2019,0,Summatriptan,food
+04-11-2019,April 2019,2019,0,Summatriptan,exercise
+04-13-2019,April 2019,2019,0,Summatriptan,food
+04-24-2019,April 2019,2019,0,Summatriptan,sleep
+04-25-2019,April 2019,2019,1,Excedrin,unknown
+04-26-2019,April 2019,2019,0,Summatriptan,unknown
+05-04-2019,May 2019,2019,0,Summatriptan,alcohol
+05-05-2019,May 2019,2019,0,Summatriptan,unknown
+05-17-2019,May 2019,2019,0,Summatriptan,food
+05-22-2019,May 2019,2019,0,Sleep aid,food
+05-25-2019,May 2019,2019,0,Sleep aid,sleep
+05-26-2019,May 2019,2019,1,Excedrin,unknown
+06-04-2019,June 2019,2019,0,Summatriptan,sleep
+06-12-2019,June 2019,2019,1,Excedrin,unknown
+06-13-2019,June 2019,2019,1,Excedrin,unknown
+06-21-2019,June 2019,2019,1,Excedrin,unknown
+06-29-2019,June 2019,2019,0,Summatriptan,sleep
+07-21-2019,July 2019,2019,0,Summatriptan,food
+08-20-2019,Aug 2019,2019,0,Summatriptan,food
+08-27-2019,Aug 2019,2019,0,Summatriptan,unknown
+09-06-2019,Sep 2019,2019,0,Summatriptan,movie
+09-19-2019,Sep 2019,2019,0,Summatriptan,sleep
+09-20-2019,Sep 2019,2019,0,Summatriptan,sleep
+09-21-2019,Sep 2019,2019,0,Sleep aid,sleep
+09-27-2019,Sep 2019,2019,0,Sleep aid,sleep
+09-28-2019,Sep 2019,2019,1,Excedrin,unknown
+10-01-2019,Oct 2019,2019,0,Excedrin,unknown
+10-11-2019,Oct 2019,2019,1,Excedrin,unknown
+10-14-2019,Oct 2019,2019,0,Sleep aid,unknown
+10-30-2019,Oct 2019,2019,0,Sleep aid,food
+11-15-2019,Nov 2019,2019,0,Summatriptan,unknown
+11-25-2019,Nov 2019,2019,0,Summatriptan,food
+12-2-2019,Dec 2019,2019,0,Summatriptan,food
+12-7-2019,Dec 2019,2019,0,Summatriptan,eye strain
+12-14-2019,Dec 2019,2019,0,Summatriptan,sleep
+1-12-2020,Jan 2020,2020,0,Summatriptan,unknown
+1-20-2020,Jan 2020,2020,0,Summatriptan,unknown
+1-27-2020,Jan 2020,2020,0,Summatriptan,unknown
+2-6-2020,Feb 2020,2020,0,Summatriptan,food
+2-8-2020,Feb 2020,2020,1,Excedrin,unknown
+2-9-2020,Feb 2020,2020,1,Excedrin,unknown
+2-14-2020,Feb 2020,2020,0,Summatriptan,unknown
+2-15-2020,Feb 2020,2020,0,Summatriptan,unknown
+2-29-2020,Feb 2020,2020,0,Summatriptan,unknown
+3-3-2020,Mar 2020,2020,1,Excedrin,unknown
+3-6-2020,Mar 2020,2020,1,Excedrin,unknown
+3-9-2020,Mar 2020,2020,1,Excedrin,unknown
+3-16-2020,Mar 2020,2020,0,Summatriptan,unknown
+3-27-2020,Mar 2020,2020,0,Summatriptan,unknown
+4-1-2020,April 2020,2020,0,Summatriptan,food
+4-30-2020,April 2020,2020,0,Summatriptan,unknown
+5-5-2020,May 2020,2020,1,Excedrin,unknown
+5-7-2020,May 2020,2020,1,Excedrin,unknown
+5-12-2020,May 2020,2020,1,Excedrin,unknown
+5-21-2020,May 2020,2020,0,Summatriptan,unknown
+5-31-2020,May 2020,2020,1,Excedrin,unknown
+6-4-2020,June 2020,2020,1,Excedrin,unknown
+6-8-2020,June 2020,2020,0,Summatriptan,unknown
+6-12-2020,June 2020,2020,0,Summatriptan,unknown
+6-13-2020,June 2020,2020,1,None,rebound
+6-14-2020,June 2020,2020,1,None,rebound
+6-15-2020,June 2020,2020,1,Excedrin,rebound
+7-1-2020,July 2020,2020,0,Summatriptan,food
+7-7-2020,July 2020,2020,0,Summatriptan,unknown
+7-30-2020,July 2020,2020,0,Summatriptan,sleep
+8-15-2020,Aug 2020,2020,1,Ibuprofen,unknown
+8-21-2020,Aug 2020,2020,0,Summatriptan,unknown
+8-28-2020,Aug 2020,2020,0,Summatriptan,food
+9-20-2020,Sep 2020,2020,0,Summatriptan,sleep
+9-21-2020,Sep 2020,2020,0,Summatriptan,food
+10-5-2020,Oct 2020,2020,1,Ibuprofen,unknown
+10-12-2020,Oct 2020,2020,0,Summatriptan,unknown
+10-16-2020,Oct 2020,2020,1,Ibuprofen,unknown
+11-3-2020,Nov 2020,2020,0,Summatriptan,food
+11-9-2020,Nov 2020,2020,0,Summatriptan,unknown
+11-18-2020,Nov 2020,2020,1,Ibuprofen,unknown
+12-1-2020,Dec 2020,2020,0,Summatriptan,sleep
+12-16-2020,Dec 2020,2020,0,Summatriptan,unknown
+12-20-2020,Dec 2020,2020,1,Ibuprofen,unknown
